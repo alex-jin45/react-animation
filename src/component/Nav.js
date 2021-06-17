@@ -1,7 +1,7 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Home from "../pages/Home";
-import ReactSpring from "../pages/ReactSpring";
+import React from "react"
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
+import Home from "../pages/Home"
+import ReactSpring from "../pages/React Spring/ReactSpring"
 
 const linkNav = [
   {
@@ -14,7 +14,7 @@ const linkNav = [
     path: "/",
     component: Home,
   },
-];
+]
 
 const Nav = () => {
   return (
@@ -27,18 +27,18 @@ const Nav = () => {
                 <li key={i}>
                   <Link to={path}>{name}</Link>
                 </li>
-              );
+              )
             })}
           </ul>
         </nav>
         <Switch>
           {linkNav.map(({ path, component }, j) => {
-            return <Route key={j} path={path} component={component} />;
+            return <Route key={j} path={path} component={component} />
           })}
         </Switch>
       </div>
     </Router>
-  );
-};
+  )
+}
 
-export default Nav;
+export default Nav

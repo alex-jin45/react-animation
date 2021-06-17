@@ -1,5 +1,6 @@
 import React from "react"
-import TooglePopinDown from "./React Spring/TooglePopinDown"
+import TooglePopinDown from "./TooglePopinDown"
+import ToogleMenuMobileAnimation from "./ToogleMenuMobileAnimation"
 
 const ReactSpring = () => {
   const styles = {
@@ -15,6 +16,7 @@ const ReactSpring = () => {
       <h1>React Spring</h1>
       <div style={styles.container}>
         <TooglePopinDown />
+        <ToogleMenuMobileAnimation />
       </div>
     </>
   )
