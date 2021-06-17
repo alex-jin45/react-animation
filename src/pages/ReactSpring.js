@@ -1,5 +1,5 @@
 import React from "react"
-import TooglePopin from "./React Spring/TooglePopin"
+import TooglePopinDown from "./React Spring/TooglePopinDown"
 
 const ReactSpring = () => {
   const styles = {
@@ -14,7 +14,7 @@ const ReactSpring = () => {
     <>
       <h1>React Spring</h1>
       <div style={styles.container}>
-        <TooglePopin />
+        <TooglePopinDown />
       </div>
     </>
   )

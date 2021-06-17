@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { useSpring, animated } from "react-spring"
 
-const TooglePopin = () => {
+const TooglePopinDown = () => {
   const [animation, setAnimation] = useState(false)
 
   const [style, animate] = useSpring(() => ({
@@ -11,7 +11,7 @@ const TooglePopin = () => {
 
   const animateDiv = () => {
     if (!animation) animate({ marginTop: 50, opacity: 1, delay: 200 })
-    if (animation) animate({ marginTop: -500, opacity: 0, delay: 200 })
+    if (animation) animate({ marginTop: -500, opacity: 0, delay: 300 })
     setAnimation(!animation)
   }
 
@@ -47,7 +47,7 @@ const TooglePopin = () => {
     <div style={styles.container}>
       <div style={styles.buttonContainer}>
         <button onClick={animateDiv} style={styles.button}>
-          Toogle animated
+          {animation ? "Toogle animated Up" : "Toogle animated Down"}
         </button>
       </div>
       <animated.div style={style}>
@@ -59,4 +59,4 @@ const TooglePopin = () => {
   )
 }
 
-export default TooglePopin
+export default TooglePopinDown
