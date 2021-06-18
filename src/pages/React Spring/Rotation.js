@@ -1,7 +1,6 @@
 import React from "react"
-import { useSpring, animated } from "@react-spring/core"
 
-const Rotate = () => {
+const Rotation = () => {
   const styles = {
     container: {
       width: "30vw",
@@ -15,4 +14,4 @@ const Rotate = () => {
   return <div style={styles.container}></div>
 }
 
-export default Rotate
+export default Rotation

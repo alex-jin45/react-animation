@@ -1,6 +1,8 @@
 import React from "react"
 import TooglePopinDown from "./TooglePopinDown"
 import ToogleMenuMobileAnimation from "./ToogleMenuMobileAnimation"
+// import Rotation from "./Rotation"
+import ClickAnimation from "./ClickAnimation"
 
 const ReactSpring = () => {
   const styles = {
@@ -17,6 +19,7 @@ const ReactSpring = () => {
       <div style={styles.container}>
         <TooglePopinDown />
         <ToogleMenuMobileAnimation />
+        <ClickAnimation />
       </div>
     </>
   )
